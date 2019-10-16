@@ -1,0 +1,20 @@
+N = int(input())
+A = []
+B = []
+C = []
+
+c = 0
+m = 0
+d = 0
+
+for i in range(0, N):
+    A.append(int(input()))
+
+while len(A) != 0:
+    c = A.count(A[0])
+    B.append(c)
+    m = A[0]
+    C.append(m)
+    for i in range(0, c):
+        del A[0]
+print(B, C)
