@@ -18,3 +18,26 @@ while len(A) != 0:
     for i in range(0, c):
         del A[0]
 print(B, C)
+====================================================================================================
+N = int(input())
+A = []
+B = []
+C = []
+
+for i in range(0, N):
+    A.append(int(input()))
+print(A)
+i = 0
+j = 0
+k = 0
+while i < len(A):
+    j = 0
+    k = 0
+    while j < len(A):
+        if A[i] == A[j]:
+            k += 1
+        j += 1
+    i += 1
+    if k > 0:
+        i += k-1
+    print(k)
